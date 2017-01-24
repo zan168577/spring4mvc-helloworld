@@ -14,6 +14,13 @@ public class APIsController {
 	public ModelAndView index() {
 		ModelAndView model = new ModelAndView("index");
 		return model;
-
+	}
+	@RequestMapping(value = "/count", method = { RequestMethod.GET })
+	public @ResponseBody String count(@RequestParam int num) {
+		String st;
+		for(int i=1;i<=num;i++){
+			st=st+i.toString();
+		}		
+		return st;
 	}
 }
