@@ -3,7 +3,7 @@
 </head>
 <body ">
 
-Hello World and you
+Hello World but you
 
 </body>
 </html>
