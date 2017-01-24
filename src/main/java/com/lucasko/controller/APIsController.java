@@ -18,11 +18,8 @@ public class APIsController {
 		return model;
 	}
 	@RequestMapping(value = "/count", method = { RequestMethod.GET })
-	public @ResponseBody String count(@RequestParam Integer num) {
-		String st;
-		for(int i=1;i<=num;i++){
-			st=st+i.toString();
-		}		
-		return st;
+	public @ResponseBody String count(@RequestParam String num) {
+			
+		return num;
 	}
 }
