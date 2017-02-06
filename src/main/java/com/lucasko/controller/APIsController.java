@@ -26,7 +26,7 @@ public class APIsController {
 		return st;
 	}
 	@RequestMapping(value = "/num", method = { RequestMethod.GET })
-	public @ResponseBody String count(@RequestParam String num) {
+	public @ResponseBody String count2(@RequestParam String num) {
 			
 		return num;
 	}

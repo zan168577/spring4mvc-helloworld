@@ -1,4 +1,4 @@
-package org.iii.controller.api;
+package com.lucasko.controller;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +9,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class apiTest {
+	
+	public APIsController apii;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -20,16 +22,23 @@ public class apiTest {
 
 	@Before
 	public void setUp() throws Exception {
+		apii=new APIsController();
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		apii=null;
 	}
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+//		System.out.println("---------------------------");
+//		  System.out.println("test java.openyu.org");
+//		  System.out.println("---------------------------");
+//		fail("Not yet implemented");
+		String input="5";
+		String output="5";
+		assertEquals(output, apii.count2(input));
 	}
 
 }
-
