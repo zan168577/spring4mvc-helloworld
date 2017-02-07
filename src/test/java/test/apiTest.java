@@ -43,4 +43,17 @@ public class apiTest {
 		assertEquals(output, apii.count2(input));
 	}
 
+	@Test
+	public void test2() {
+		int input=5;
+		String output="5";
+		assertEquals(output, apii.count(input));
+	}
+	
+	@Test
+	public void test3() {
+		int input=5;
+		String output="12345";
+		assertEquals(output, apii.count(input));
+	}
 }
