@@ -45,8 +45,8 @@ public class apiTest {
 
 	@Test
 	public void test2() {
-		int input=5;
-		String output="5";
+		int input=1;
+		String output="1";
 		assertEquals(output, apii.count(input));
 	}
 	
